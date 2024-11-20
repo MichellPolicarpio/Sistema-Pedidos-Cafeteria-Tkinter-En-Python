@@ -5,7 +5,6 @@
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 
 <div align="center">
-    <img src="/api/placeholder/800/400" alt="Sistema de Pedidos para Cafetería"/>
     <p><i>Sistema de gestión de pedidos moderno y eficiente para la Cafetería FIEE-UV</i></p>
 </div>
 
