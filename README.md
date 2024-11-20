@@ -279,14 +279,14 @@ Crear el directorio 'tickets' manualmente:
 mkdir tickets
 ```
 
-## 👥 Contribuidores
+## 👥 Creditos de los creadores:
 
 Este proyecto fue desarrollado por estudiantes de la Universidad Veracruzana:
 
-- 👨‍💻 Michell Alexis Policarpio Moran (zs21002379)
-- 👨‍💻 Contreras Matla Luis Fernando (zs21020225)
-- 👨‍💻 Bravo Ibañez Luis Fernando (zS21002428)
-- 👨‍💻 García Velandia Samuel Obded (zS21002413)
+- 👨‍💻 Michell Alexis Policarpio Moran
+- 👨‍💻 Contreras Matla Luis Fernando
+- 👨‍💻 Bravo Ibañez Luis Fernando 
+- 👨‍💻 García Velandia Samuel Obded
 
 ## 📝 Licencia
 
