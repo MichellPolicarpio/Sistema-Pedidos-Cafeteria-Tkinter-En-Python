@@ -4,10 +4,6 @@
 ![tkinter](https://img.shields.io/badge/GUI-tkinter-green.svg)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 
-<div align="center">
-    <p><i>Sistema de gestión de pedidos moderno y eficiente para la Cafetería FIEE-UV</i></p>
-</div>
-
 ## 📝 Descripción
 
 Sistema de gestión integral para cafeterías desarrollado con Python y tkinter. Permite administrar pedidos en tiempo real, gestionar tickets, controlar tiempos de preparación y mantener un registro detallado de las transacciones. Diseñado específicamente para la Cafetería de la Facultad de Ingeniería Eléctrica y Electrónica de la Universidad Veracruzana.
