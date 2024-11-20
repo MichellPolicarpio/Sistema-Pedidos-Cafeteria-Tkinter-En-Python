@@ -181,7 +181,6 @@ Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más det
 ## 🏛️ Institución
 
 <div align="center">
-    <img src="/api/placeholder/200/200" alt="Logo UV"/>
     <p><b>Universidad Veracruzana</b></p>
     <p>Facultad de Ingeniería Eléctrica y Electrónica</p>
 </div>
