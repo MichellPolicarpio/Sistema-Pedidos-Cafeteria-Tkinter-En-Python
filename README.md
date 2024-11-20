@@ -60,7 +60,7 @@ python --version
 
 2. Clone el repositorio:
 ```bash
-git clone https://github.com/tu-usuario/sistema-pedidos-cafeteria.git
+git clone https://github.com/MichellPolicarpio/Sistema-Pedidos-Cafeteria-Tkinter-En-Python.git
 cd sistema-pedidos-cafeteria
 ```
 
