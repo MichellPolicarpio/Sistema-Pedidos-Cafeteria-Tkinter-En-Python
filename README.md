@@ -10,11 +10,13 @@ Sistema de gestión integral para cafeterías desarrollado con Python y tkinter.
 
 ## 📑 Tabla de Contenidos
 - [Características Principales](#-características-principales)
+- [Detalles Técnicos](#-detalles-técnicos)
 - [Requisitos del Sistema](#-requisitos-del-sistema)
 - [Instalación](#-instalación)
 - [Uso](#-uso)
 - [Funcionalidades Detalladas](#-funcionalidades-detalladas)
 - [Estructura del Proyecto](#-estructura-del-proyecto)
+- [Solución de Problemas](#-solución-de-problemas-comunes)
 - [Contribuidores](#-contribuidores)
 - [Licencia](#-licencia)
 
@@ -28,6 +30,118 @@ Sistema de gestión integral para cafeterías desarrollado con Python y tkinter.
 - 📱 Interfaz gráfica intuitiva y moderna
 - 📈 Historial completo de transacciones
 - 🔍 Búsqueda y filtrado avanzado de tickets
+
+## 🔧 Detalles Técnicos
+
+### Arquitectura del Sistema
+
+#### 1. Interfaz Gráfica (GUI)
+- Desarrollada con `tkinter` y `ttk` para una experiencia moderna
+- Sistema de pestañas para navegación intuitiva:
+  - Nuevo Pedido: Interfaz para crear órdenes
+  - Pedidos Activos: Monitoreo en tiempo real
+  - Historial de Tickets: Gestión y búsqueda de transacciones
+- Diseño responsive con grid system
+- Tema personalizado con estilo profesional
+- Widgets modernos como calendarios y barras de progreso
+
+#### 2. Gestión de Estados
+- Implementación orientada a objetos con clases principales:
+  - `Ticket`: Manejo de información de tickets
+    - Generación de IDs únicos
+    - Almacenamiento de detalles de la orden
+    - Cálculo de totales
+  - `BebidaPersonalizada`: Gestión de bebidas y extras
+    - Control de cantidades
+    - Cálculo de precios
+    - Gestión de modificadores
+  - `SistemaPedidosCafeteria`: Controlador principal
+    - Coordinación de operaciones
+    - Gestión de GUI
+    - Control de flujo de trabajo
+
+#### 3. Procesamiento Asíncrono
+- Uso de `threading` para operaciones no bloqueantes
+  - Preparación de bebidas en segundo plano
+  - Actualización de progreso en tiempo real
+  - Manejo de múltiples pedidos simultáneos
+- Sistema de temporizadores precisos
+- Actualización dinámica de interfaces
+- Prevención de bloqueos de GUI
+
+#### 4. Persistencia de Datos
+- Almacenamiento en formato JSON
+  - Estructura optimizada para tickets
+  - Respaldo automático
+  - Recuperación de estado
+- Sistema de IDs único con `uuid`
+- Manejo de fechas con `datetime`
+- Exportación de datos
+
+#### 5. Características Avanzadas
+
+##### Sistema de Notificaciones
+- Alertas visuales para pedidos completados
+- Indicadores de progreso en tiempo real
+- Notificaciones de sistema integradas
+- Alertas sonoras configurables
+
+##### Gestión de Tiempo
+- Cálculo automático de tiempos de preparación
+- Temporizadores precisos para cada bebida
+- Ajuste dinámico según extras seleccionados
+- Sistema de prioridad de pedidos
+
+##### Interfaz de Búsqueda
+- Filtrado por múltiples criterios
+  - Fecha
+  - ID de ticket
+  - Contenido de orden
+- Búsqueda en tiempo real
+- Sistema de calendario integrado
+- Exportación de resultados
+
+##### Manejo de Errores
+- Sistema robusto de validación de entradas
+- Recuperación automática de errores
+- Mensajes de error informativos
+- Logging de eventos críticos
+
+### Diagrama de Clases Principal
+
+```
++----------------+     +----------------------+     +------------------+
+|     Ticket     |     | BebidaPersonalizada |     |  SistemaPedidos |
++----------------+     +----------------------+     +------------------+
+| - ticket_id    |     | - tipo              |     | - ordenes       |
+| - orden_id     |     | - cantidad          |     | - tickets       |
+| - bebidas      |     | - extras            |     | - GUI elements  |
+| - total        |     | + calcular_subtotal |     | + crear_orden   |
+| - timestamp    |     | + calcular_tiempo   |     | + generar_ticket|
++----------------+     +----------------------+     +------------------+
+```
+
+### Flujo de Trabajo Principal
+
+1. **Inicio del Sistema**
+   - Carga de configuración
+   - Inicialización de GUI
+   - Restauración de estado previo
+   - Verificación de directorios
+
+2. **Proceso de Pedido**
+   - Selección de productos
+   - Cálculo de tiempos/precios
+   - Generación de ticket
+   - Inicio de preparación
+   - Monitoreo de progreso
+
+3. **Monitoreo de Pedidos**
+   - Actualización en tiempo real
+   - Control de estados
+   - Notificaciones
+   - Finalización automática
+   - Gestión de completados
 
 ## 💻 Requisitos del Sistema
 
@@ -87,7 +201,7 @@ python -c "import tkinter, tkcalendar"
 
 6. Ejecute el programa:
 ```bash
-python main.py
+python Equipo_3_Actividad_15.py
 ```
 
 ## 🎯 Uso
@@ -134,8 +248,8 @@ sistema-pedidos-cafeteria/
 │
 ├── Equipo_3_Actividad_15.py   # Archivo principal del sistema
 ├── tickets/                   # Directorio para almacenamiento de tickets
-│   └── tickets.json           # Base de datos JSON de tickets
-├── README.md                  # Documentación del proyecto
+│   └── tickets.json          # Base de datos JSON de tickets
+├── README.md                 # Documentación del proyecto
 ```
 
 ## 🔧 Solución de Problemas Comunes
