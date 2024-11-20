@@ -620,4 +620,4 @@ Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más det
         <a href="https://www.uv.mx/fiee/">FIEE</a>
     </p>
 </div>
->>>>>>> 0cb3327df2b43a3c91802e4b5bc1360b42dae67d
+
